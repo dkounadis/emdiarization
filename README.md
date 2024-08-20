@@ -1,6 +1,6 @@
-# EMDIARIZATION
+# EMdiarisation
 
-MATLAB code for
+MATLAB code for An EM algorithm for simultaneous Audio Source Separation and Diarization using NMF in STFT domain implementing this paper
 
 ```
 D. Kounades-Bastian, L. Girin, X. Alameda-Pineda, S. Gannot and R. Horaud, 
@@ -13,7 +13,14 @@ pp. 16-20, doi: 10.1109/ICASSP.2017.7951789.
 ```python
 # In MATLAB console
 >>> example
+
+# `example.m` generates a stereo mix of 3 sources (by loading trueSrc1.wav, ..)
+# Then calls `initNMF.m` to provide initialisation params via binary masking.
+# Then applies `emd.m` to separate the sources. 
+# Separated sources will be saved as .wav files (estimatedSrc1.wav, etc.) in the directory `./results/`. 
 ```
+
+
 
 ## PAPER
   - [pdf](https://inria.hal.science/hal-01430761/file/diarisation_camready.pdf)
